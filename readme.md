@@ -22,7 +22,7 @@ cd yaroshuk2005
 
 ```env
 DB_HOST=db
-DB_PORT=5433
+DB_PORT=5432
 DB_NAME=digital_sp
 DB_USER=postgres
 DB_PASSWORD=postgres
@@ -37,7 +37,7 @@ docker-compose up --build
 ```
 
 - Приложение будет доступно на [http://localhost/](http://localhost/)
-- PostgreSQL будет доступен на порту 5433 (для подключения с вашей машины).
+- PostgreSQL будет доступен на порту 5432 (для подключения с вашей машины).
 
 ---
 
