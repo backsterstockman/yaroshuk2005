@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Все записи</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css"/>
+</head>
+<body>
+    <h1>Все записи</h1>
+    <table id="records-table" class="display">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Имя</th>
+                <th>Дата</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for rec in records %}
+            <tr>
+                <td>{{ rec.id }}</td>
+                <td>{{ rec.name }}</td>
+                <td>{{ rec.date }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#records-table').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.13.7/i18n/ru.json"
+                }
+            });
+        });
+    </script>
+</body>
+</html>
