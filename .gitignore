@@ -1,3 +1,32 @@
-.venv
+venv/
+.venv/
+env/
+ENV/
+
+# Кэш и временные файлы
 __pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
 .env
+.flaskenv
+
+node_modules/
+bower_components/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store (для macOS)
+
+*.db
+*.sqlite3
